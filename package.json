@@ -2,13 +2,14 @@
   "name": "format-count",
   "version": "1.0.0",
   "description": "",
+  "keywords": ["format-count", "abbreviations", "number", "count"],
   "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fureinzz/formatCount.git"
   },
-  "author": "fureinzz@gmail.com",
+  "author": "Maxim Kopylov <fureinzz@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/fureinzz/formatCount/issues"
