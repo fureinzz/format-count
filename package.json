@@ -2,8 +2,16 @@
   "name": "format-count",
   "version": "1.0.0",
   "description": "",
-  "keywords": ["format-count", "abbreviations", "number", "count"],
+  "keywords": [
+    "format-count",
+    "abbreviations",
+    "number",
+    "count"
+  ],
   "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register ./test/*.ts"
+  },
   "type": "module",
   "repository": {
     "type": "git",
@@ -15,5 +23,12 @@
     "url": "https://github.com/fureinzz/formatCount/issues"
   },
   "homepage": "https://github.com/fureinzz/formatCount#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
 }
