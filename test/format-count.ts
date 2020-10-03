@@ -1,5 +1,5 @@
 import Chai from 'chai'
-import formatCount from '../src'
+import formatCount from '../src/index'
 
 const assert = Chai.assert
 
@@ -28,8 +28,6 @@ describe('format-count', () => {
         assert.isString(formatCount(1e10))
     })
     it('Should return an error if the number exceeds the maximum allowed.', () => {
-        assert.throws(() => {
-            formatCount(1e39)
-        }, Error, 'Maximum supported value is less than `1e39`')
+        assert.throws(() => formatCount(1e39), Error, /Maximum supported value is less than `1e39`/)
     })
 })
