@@ -1,7 +1,7 @@
 {
   "name": "format-count",
   "version": "1.0.0",
-  "description": "",
+  "description": "Returns a number with an abbreviation",
   "keywords": [
     "format-count",
     "abbreviations",
