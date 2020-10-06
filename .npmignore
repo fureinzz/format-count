@@ -1,7 +1,8 @@
 example
 node_modules
-test
 
 # ignore .ts files
-
 *.ts
+
+#ignore the tsconfig.json
+tsconfig.json
