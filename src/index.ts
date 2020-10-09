@@ -5,7 +5,7 @@
  * @param `num` - Numeric value to be formatted.
  * @param `fix` - Indicates the number of characters after the floating point.
  **/
-export default (num: number, fix: number = 0): string => {
+const formatCount = (num: number, fix: number = 0): string => {
     const NUM_ABBR: string[] = ['', 'K', 'M', 'B', 'T', 'q', 'Q', 's', 'S', 'O', 'N', 'd', 'U']
 
     if (num >= 1e39) throw new Error('Maximum supported value is less than `1e39`')
@@ -17,3 +17,4 @@ export default (num: number, fix: number = 0): string => {
 }
 
 
+export default formatCount
