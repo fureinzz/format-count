@@ -4,5 +4,8 @@ node_modules
 # ignore .ts files
 *.ts
 
+# include .d.ts
+!*.d.ts
+
 #ignore the tsconfig.json
 tsconfig.json
