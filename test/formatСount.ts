@@ -1,9 +1,9 @@
 import Chai from 'chai'
-import formatCount from '../src/index'
+import formatCount from '../index'
 
 const assert = Chai.assert
 
-describe('format-count', () => {
+describe('formatСount', () => {
     it('Should return a number with an abbreviation.', () => {
         assert.equal(formatCount(999), '999')
         assert.equal(formatCount(1999), '1K')

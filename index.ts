@@ -1,3 +1,5 @@
+const NUM_ABBR: string[] = ['', 'K', 'M', 'B', 'T', 'q', 'Q', 's', 'S', 'O', 'N', 'd', 'U']
+
 /**
  * Returns an abbreviated numeric value with an abbreviation.
  * Maximum supported number - `num < 1e39`
@@ -6,8 +8,6 @@
  * @param `fix` - Indicates the number of characters after the floating point.
  **/
 function formatCount<T extends number, K extends number>(num: T, fix?: K): string {
-    const NUM_ABBR: string[] = ['', 'K', 'M', 'B', 'T', 'q', 'Q', 's', 'S', 'O', 'N', 'd', 'U']
-
     if (num >= 1e39) throw new Error('Maximum supported value is less than `1e39`')
 
     const k = fix ?? 0
