@@ -5,5 +5,5 @@
  * @param `num` - Numeric value to be formatted.
  * @param `fix` - Indicates the number of characters after the floating point.
  **/
-declare const formatCount: (num: number, fix?: number) => string;
+declare function formatCount<T extends number, K extends number>(num: T, fix?: K): string;
 export default formatCount;
