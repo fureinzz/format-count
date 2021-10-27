@@ -5,6 +5,7 @@ const assert = Chai.assert
 
 describe('formatСount', () => {
     it('Should return a number with an abbreviation.', () => {
+        assert.equal(formatCount(0), '0')
         assert.equal(formatCount(999), '999')
         assert.equal(formatCount(1999), '1K')
         assert.equal(formatCount(1e6), '1M')

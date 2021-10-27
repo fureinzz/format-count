@@ -8,6 +8,8 @@ const NUM_ABBR: string[] = ['', 'K', 'M', 'B', 'T', 'q', 'Q', 's', 'S', 'O', 'N'
  * @param `fix` - Indicates the number of characters after the floating point.
  **/
 function formatCount<T extends number, K extends number>(num: T, fix?: K): string {
+    if (num === 0) return '0'
+    
     if (num >= 1e39) throw new Error('Maximum supported value is less than `1e39`')
 
     const k = fix ?? 0
